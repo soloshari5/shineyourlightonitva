@@ -3,7 +3,42 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Shine Your Light On It | Premium Operational Stewardship</title>
+<title>Shine Your Light On It | Operational Stewardship for Healthcare Practices</title>
+<meta name="description" content="A US-based boutique VA agency built exclusively for healthcare practice owners. HIPAA-aware operational stewardship — from patient journey to billing to compliance — so physicians and practice leaders can lead without burning out."/>
+<meta name="keywords" content="healthcare virtual assistant, HIPAA compliant VA, medical practice operations, physician VA, dental practice virtual assistant, therapist practice operations, med spa VA, boutique clinic support"/>
+
+<!-- Open Graph -->
+<meta property="og:title" content="Shine Your Light On It | Operational Stewardship for Healthcare Practices"/>
+<meta property="og:description" content="A US-based boutique VA agency built exclusively for healthcare practice owners. HIPAA-aware operational stewardship for physicians, dentists, therapists, and boutique clinic founders."/>
+<meta property="og:type" content="website"/>
+<meta property="og:locale" content="en_US"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Shine Your Light On It | Healthcare Practice Stewardship"/>
+<meta name="twitter:description" content="US-based, HIPAA-aware boutique VA agency for healthcare practice owners."/>
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Shine Your Light On It",
+  "description": "US-based boutique virtual assistant agency providing HIPAA-aware operational stewardship to healthcare practices — primary care, specialty, dental, behavioral health, med spa and aesthetics, and boutique clinics.",
+  "areaServed": "United States",
+  "serviceType": [
+    "Healthcare Virtual Assistant",
+    "HIPAA-Aware Practice Operations",
+    "Patient Journey Management",
+    "Medical Billing Operations",
+    "Practice Compliance Support"
+  ],
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Healthcare Practice Owners and Physicians"
+  },
+  "priceRange": "$3,500+/month"
+}
+</script>
+
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Manrope:wght@200;300;400;500;600&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,200,0,0" rel="stylesheet"/>
 <!-- EmailJS -->
@@ -17,19 +52,21 @@ html { scroll-behavior:smooth; }
 
 /* ─── TOKENS ─── */
 :root {
-  --bg:          #131313;
-  --surface-0:   #0e0e0e;
-  --surface-1:   #1b1c1c;
-  --surface-2:   #1f2020;
-  --surface-3:   #2a2a2a;
-  --surface-4:   #353535;
-  --on-surface:  #e4e2e1;
-  --on-variant:  #cbc6bb;
-  --gold:        #e8e2d0;
-  --gold-dim:    #ccc6b5;
-  --gold-faint:  rgba(232,226,208,0.06);
+  --bg:          #16171a;
+  --surface-0:   #111216;
+  --surface-1:   #1e2025;
+  --surface-2:   #232630;
+  --surface-3:   #2d2f38;
+  --surface-4:   #3a3c46;
+  --on-surface:  #e8e5df;
+  --on-variant:  #d4d0c6;
+  --gold:        #e4dcc2;
+  --gold-dim:    #c9c1a9;
+  --gold-faint:  rgba(228,220,194,0.06);
   --obsidian:    #1e1c11;
-  --outline:     rgba(232,226,208,0.08);
+  --outline:     rgba(228,220,194,0.09);
+  --clinical:    #b8c4c9;
+  --warmth:      #c7a47a;
 }
 
 /* ─── BASE ─── */
@@ -614,10 +651,11 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; }
 <nav id="section-counter" aria-label="Page sections">
   <div class="counter-dot active" onclick="scrollToSection(0)" title="Home"></div>
   <div class="counter-dot" onclick="scrollToSection(1)" title="Our Mission"></div>
-  <div class="counter-dot" onclick="scrollToSection(2)" title="Services"></div>
-  <div class="counter-dot" onclick="scrollToSection(3)" title="Integrity"></div>
-  <div class="counter-dot" onclick="scrollToSection(4)" title="Process"></div>
-  <div class="counter-dot" onclick="scrollToSection(5)" title="Partnership"></div>
+  <div class="counter-dot" onclick="scrollToSection(2)" title="Practices"></div>
+  <div class="counter-dot" onclick="scrollToSection(3)" title="Trust &amp; HIPAA"></div>
+  <div class="counter-dot" onclick="scrollToSection(4)" title="Integrity"></div>
+  <div class="counter-dot" onclick="scrollToSection(5)" title="Process"></div>
+  <div class="counter-dot" onclick="scrollToSection(6)" title="Partnership"></div>
 </nav>
 
 <!-- ═══════════════ NAV ═══════════════ -->
@@ -638,7 +676,8 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; }
       <span class="nav-brand-name">Shine Your Light On It</span>
     </div>
     <ul class="nav-links">
-      <li><a href="#services">Services</a></li>
+      <li><a href="#services">Practices</a></li>
+      <li><a href="#trust">Trust &amp; HIPAA</a></li>
       <li><a href="#about">The Dossier</a></li>
       <li><a href="#process">Process</a></li>
       <li><a href="#quiz">Partnership</a></li>
@@ -654,7 +693,8 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; }
 
 <!-- Nav Drawer -->
 <div class="nav-drawer" id="nav-drawer">
-  <a href="#services" onclick="toggleMenu()">Services</a>
+  <a href="#services" onclick="toggleMenu()">Practices</a>
+  <a href="#trust" onclick="toggleMenu()">Trust &amp; HIPAA</a>
   <a href="#about" onclick="toggleMenu()">The Dossier</a>
   <a href="#process" onclick="toggleMenu()">Process</a>
   <a href="#quiz" onclick="toggleMenu()">Partnership</a>
@@ -847,7 +887,7 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; }
   <div class="hero-lit-text" style="padding:140px 32px 80px;">
     <div style="max-width:1000px;margin:0 auto;">
 
-      <p class="lit-eyebrow fade-up" style="transition-delay:.1s">Premium US-Based Boutique VA Agency</p>
+      <p class="lit-eyebrow fade-up" style="transition-delay:.1s">A US-Based Boutique VA Agency for Healthcare Practices</p>
 
       <!-- Title with dual-layer clip-path reveal -->
       <div class="lit-title-wrap fade-up word-reveal" style="transition-delay:.3s">
@@ -864,12 +904,12 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; }
       <div class="hero-divider fade-up" style="transition-delay:.5s;width:1px;height:64px;margin:0 auto 32px;background:linear-gradient(to bottom, rgba(232,226,208,.35), transparent);"></div>
 
       <p class="lit-subtitle fade-up" style="transition-delay:.65s">
-        We don't manage tasks. We steward legacies — bringing clarity, order, and light to the corners of your operation that deserve better.
+        For physicians and practice owners who are tired of being the ones verifying insurance, chasing no-shows, and answering patient emails at 10pm. We take the operational weight — HIPAA-aware, US-based, done right — so you can lead your practice instead of running it.
       </p>
 
       <div class="lit-actions fade-up" style="transition-delay:.85s">
         <a href="#quiz" class="btn-primary">Begin the Partnership</a>
-        <a href="#services" class="btn-ghost">Explore Services</a>
+        <a href="#services" class="btn-ghost">See What We Take Off Your Plate</a>
       </div>
     </div>
   </div>
@@ -888,20 +928,20 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; }
 <div class="marquee-wrap">
   <div class="marquee-track">
     <span class="marquee-item">Operational Stewardship</span><span class="marquee-sep">✦</span>
-    <span class="marquee-item">US-Based Only</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">US-Based · HIPAA-Aware</span><span class="marquee-sep">✦</span>
     <span class="marquee-item">Faith · Integrity · Precision</span><span class="marquee-sep">✦</span>
     <span class="marquee-item">The Personality Match</span><span class="marquee-sep">✦</span>
     <span class="marquee-item">30-Day Transition Guarantee</span><span class="marquee-sep">✦</span>
     <span class="marquee-item">Starting at $3,500/month</span><span class="marquee-sep">✦</span>
-    <span class="marquee-item">Honorable Leaders Only</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">Physician-Owned & Partner-Led Practices</span><span class="marquee-sep">✦</span>
     <!-- repeat for seamless loop -->
     <span class="marquee-item">Operational Stewardship</span><span class="marquee-sep">✦</span>
-    <span class="marquee-item">US-Based Only</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">US-Based · HIPAA-Aware</span><span class="marquee-sep">✦</span>
     <span class="marquee-item">Faith · Integrity · Precision</span><span class="marquee-sep">✦</span>
     <span class="marquee-item">The Personality Match</span><span class="marquee-sep">✦</span>
     <span class="marquee-item">30-Day Transition Guarantee</span><span class="marquee-sep">✦</span>
     <span class="marquee-item">Starting at $3,500/month</span><span class="marquee-sep">✦</span>
-    <span class="marquee-item">Honorable Leaders Only</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">Physician-Owned & Partner-Led Practices</span><span class="marquee-sep">✦</span>
   </div>
 </div>
 
@@ -933,19 +973,19 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; }
   <div class="container">
     <div class="manifesto-grid">
       <div class="fade-up reveal-left">
-        <p class="eyebrow" style="margin-bottom:24px">The Manifesto</p>
+        <p class="eyebrow" style="margin-bottom:24px">Why We Exist</p>
         <h2 class="display-lg" style="margin-bottom:28px">
-          You don't need a task-doer.<br/>You need <em class="gold-text">a steward.</em>
+          You don't need another assistant.<br/>Your practice needs <em class="gold-text">its operations handled.</em>
         </h2>
         <p class="body-sm" style="margin-bottom:20px">
-          There are dark corners in every high-performance operation — unread inboxes, fractured workflows, mismanaged client touchpoints. These aren't administrative failures. They're signals that you've outgrown the support around you.
+          Every high-performing practice has the same list of things falling through the cracks: patient messages that don't get answered until tomorrow, no-shows no one follows up on, insurance verifications that stall, superbills that go out late. These aren't admin failures. They're revenue and hours you're bleeding every week because your operations can't keep up with your clinical work.
         </p>
         <p class="body-sm" style="margin-bottom:20px">
-          Shine Your Light On It exists to illuminate those corners. We partner exclusively with honorable leaders whose standards for integrity extend beyond the boardroom — into how they treat their team, their families, and their word.
+          Shine Your Light On It partners with physicians, dentists, therapists, aesthetic practitioners, and boutique clinic owners whose standards for patient care extend into how their operation is run — how staff are treated, how notes are handled, and how every patient touchpoint is handled before it becomes a problem.
         </p>
         <div class="pull-quote">
           <p class="serif italic" style="font-size:20px;color:var(--gold);line-height:1.5">
-            "We protect your highest-value relationships so you can lead without burning out."
+            "We protect your patients, your staff, and your time — so you can practice without burning out."
           </p>
         </div>
       </div>
@@ -955,8 +995,8 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; }
           <p class="eyebrow" style="line-height:1.8">Day Transition<br/>Guarantee</p>
         </div>
         <div class="stat-cell">
-          <div class="stat-num">5</div>
-          <p class="eyebrow" style="line-height:1.8">Elite Sectors<br/>Served</p>
+          <div class="stat-num" style="font-size:2.1rem;letter-spacing:.02em;">HIPAA</div>
+          <p class="eyebrow" style="line-height:1.8">Aware Operating<br/>Model</p>
         </div>
         <div class="stat-cell">
           <div class="stat-num">US</div>
@@ -976,94 +1016,108 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; }
   <div class="container">
     <div class="services-header fade-up reveal-left">
       <div>
-        <p class="eyebrow" style="margin-bottom:20px">The Verticals</p>
-        <h2 class="display-lg">Specialized Competence<br/><em class="gold-text">for Elite Sectors</em></h2>
+        <p class="eyebrow" style="margin-bottom:20px">The Practices We Serve</p>
+        <h2 class="display-lg">Built for the Practices<br/><em class="gold-text">We Know Best.</em></h2>
       </div>
-      <p class="body-sm" style="max-width:260px;text-align:right">Professional-grade deliverables — not just admin. Custom, project-based proposals.</p>
+      <p class="body-sm" style="max-width:260px;text-align:right">If you're still the one doing it — patient calls, scheduling, insurance verification, billing follow-up, recalls — we can take it off your plate. HIPAA-aware, scoped to your practice.</p>
     </div>
     <div class="services-grid">
 
       <div class="service-card fade-up">
         <div class="service-card-glow"></div>
-        <span class="material-symbols-outlined service-icon">local_hospital</span>
-        <h3 class="serif" style="font-size:22px;font-weight:300;color:var(--on-surface)">Healthcare</h3>
-        <p class="service-sector">Private Practice · Boutique Clinics</p>
-        <p class="body-xs">HIPAA-compliant precision for practices where a missed detail carries real consequence.</p>
+        <span class="material-symbols-outlined service-icon">stethoscope</span>
+        <h3 class="serif" style="font-size:22px;font-weight:300;color:var(--on-surface)">Primary Care &amp; Family Medicine</h3>
+        <p class="service-sector">Independent · Small-Group Practices</p>
+        <p class="body-xs">For independent PCPs and small groups still doing insurance calls and intake forms between patients. We take those back so you're not running ops between appointments.</p>
         <ul class="service-list">
           <li><span class="service-dot"></span>Patient Journey Mapping</li>
-          <li><span class="service-dot"></span>Executive Schedule Mastery</li>
-          <li><span class="service-dot"></span>Billing Ecosystem Design</li>
-          <li><span class="service-dot"></span>Policy & Compliance Writing</li>
+          <li><span class="service-dot"></span>Provider Schedule Mastery</li>
+          <li><span class="service-dot"></span>Insurance &amp; Self-Pay Billing Ops</li>
+          <li><span class="service-dot"></span>Staff SOPs &amp; Onboarding</li>
         </ul>
       </div>
 
       <div class="service-card fade-up" style="transition-delay:.08s">
         <div class="service-card-glow"></div>
-        <span class="material-symbols-outlined service-icon">balance</span>
-        <h3 class="serif" style="font-size:22px;font-weight:300;color:var(--on-surface)">Legal</h3>
-        <p class="service-sector">Law Firms · Solo Practitioners</p>
-        <p class="body-xs">Rigorous document management and lifecycle oversight for high-performing practitioners.</p>
+        <span class="material-symbols-outlined service-icon">monitor_heart</span>
+        <h3 class="serif" style="font-size:22px;font-weight:300;color:var(--on-surface)">Specialty Practices</h3>
+        <p class="service-sector">Cardiology · Derm · Ortho · GI · Beyond</p>
+        <p class="body-xs">Referrals that go cold, pre-auths stuck for weeks, procedure calendars that slip — specialty practices bleed from the pipeline in. We keep the flow tight from inbound referral to billed visit.</p>
         <ul class="service-list">
-          <li><span class="service-dot"></span>Case Lifecycle Operations</li>
-          <li><span class="service-dot"></span>Jurisdictional Research</li>
-          <li><span class="service-dot"></span>Compliance Workflow Design</li>
-          <li><span class="service-dot"></span>Financial Audits & Reporting</li>
+          <li><span class="service-dot"></span>Referral Pipeline Management</li>
+          <li><span class="service-dot"></span>Procedure &amp; OR Scheduling</li>
+          <li><span class="service-dot"></span>Pre-Authorization Tracking</li>
+          <li><span class="service-dot"></span>Specialty Billing Coordination</li>
         </ul>
       </div>
 
       <div class="service-card fade-up" style="transition-delay:.16s">
         <div class="service-card-glow"></div>
-        <span class="material-symbols-outlined service-icon">verified_user</span>
-        <h3 class="serif" style="font-size:22px;font-weight:300;color:var(--on-surface)">Compliance</h3>
-        <p class="service-sector">Regulated Industries</p>
-        <p class="body-xs">Policy writing and audit-ready documentation built with the full weight of the standard.</p>
+        <span class="material-symbols-outlined service-icon">dentistry</span>
+        <h3 class="serif" style="font-size:22px;font-weight:300;color:var(--on-surface)">Dental &amp; Orthodontic</h3>
+        <p class="service-sector">Private Practice · DSO-Adjacent</p>
+        <p class="body-xs">Empty chairs and dropped treatment plans are the two silent killers of a dental practice. We handle recall, insurance verification, and case follow-through so chairs stay full and cases close.</p>
         <ul class="service-list">
-          <li><span class="service-dot"></span>Policy & Procedure Writing</li>
-          <li><span class="service-dot"></span>Regulatory Framework Design</li>
-          <li><span class="service-dot"></span>Internal Audit Preparation</li>
-          <li><span class="service-dot"></span>SOPs & Staff Protocols</li>
+          <li><span class="service-dot"></span>Treatment Plan Follow-Through</li>
+          <li><span class="service-dot"></span>Insurance Verification</li>
+          <li><span class="service-dot"></span>Recall &amp; Reactivation Systems</li>
+          <li><span class="service-dot"></span>Case Presentation Flow</li>
         </ul>
       </div>
 
       <div class="service-card fade-up" style="transition-delay:.24s">
         <div class="service-card-glow"></div>
-        <span class="material-symbols-outlined service-icon">code</span>
-        <h3 class="serif" style="font-size:22px;font-weight:300;color:var(--on-surface)">Developers</h3>
-        <p class="service-sector">Founders · Technical Leaders</p>
-        <p class="body-xs">Operational infrastructure for builders whose brilliance is in the product — not the inbox.</p>
+        <span class="material-symbols-outlined service-icon">psychology</span>
+        <h3 class="serif" style="font-size:22px;font-weight:300;color:var(--on-surface)">Behavioral &amp; Mental Health</h3>
+        <p class="service-sector">Therapists · Psychiatry · Group Practices</p>
+        <p class="body-xs">Intake forms that take a week to come back, no-shows eating your schedule, superbills that take you Sunday nights to process. We take that work off a clinician's plate — HIPAA-aware, discreet, signed BAA.</p>
         <ul class="service-list">
-          <li><span class="service-dot"></span>Project Management</li>
-          <li><span class="service-dot"></span>Stakeholder Communication</li>
-          <li><span class="service-dot"></span>Launch Coordination</li>
-          <li><span class="service-dot"></span>Vendor & Contract Management</li>
+          <li><span class="service-dot"></span>Intake &amp; Screening Workflows</li>
+          <li><span class="service-dot"></span>Superbill &amp; Insurance Ops</li>
+          <li><span class="service-dot"></span>No-Show Reduction Systems</li>
+          <li><span class="service-dot"></span>HIPAA-Aware Client Communications</li>
         </ul>
       </div>
 
       <div class="service-card fade-up" style="transition-delay:.32s">
         <div class="service-card-glow"></div>
-        <span class="material-symbols-outlined service-icon">psychology</span>
-        <h3 class="serif" style="font-size:22px;font-weight:300;color:var(--on-surface)">Coaches</h3>
-        <p class="service-sector">High-Ticket Programs · Thought Leaders</p>
-        <p class="body-xs">Bespoke operations for those building movements, not just businesses.</p>
+        <span class="material-symbols-outlined service-icon">spa</span>
+        <h3 class="serif" style="font-size:22px;font-weight:300;color:var(--on-surface)">Med Spa, Aesthetics &amp; Wellness</h3>
+        <p class="service-sector">Aesthetic · Longevity · Functional Medicine</p>
+        <p class="body-xs">Your patient experience is your marketing. We manage the concierge inbox, membership and package logistics, product vendors, and launch ops so your front desk isn't drowning while you're in a treatment room.</p>
         <ul class="service-list">
-          <li><span class="service-dot"></span>Program Launch Logistics</li>
-          <li><span class="service-dot"></span>Elite Client Concierge</li>
-          <li><span class="service-dot"></span>Scalable Service Design</li>
-          <li><span class="service-dot"></span>Content & Launch Calendar</li>
+          <li><span class="service-dot"></span>Concierge Patient Journey</li>
+          <li><span class="service-dot"></span>Membership &amp; Package Ops</li>
+          <li><span class="service-dot"></span>Vendor &amp; Product Management</li>
+          <li><span class="service-dot"></span>Event &amp; Launch Coordination</li>
         </ul>
       </div>
 
-      <div class="service-promise fade-up" style="transition-delay:.4s">
+      <div class="service-card fade-up" style="transition-delay:.4s">
+        <div class="service-card-glow"></div>
+        <span class="material-symbols-outlined service-icon">local_hospital</span>
+        <h3 class="serif" style="font-size:22px;font-weight:300;color:var(--on-surface)">Boutique Clinics &amp; Group Practices</h3>
+        <p class="service-sector">Founders · Multi-Provider Leaders</p>
+        <p class="body-xs">You built the clinical model. The operating model — policies, onboarding, multi-provider scheduling, billing coordination — is what keeps you up at night. We build that spine so the practice can scale without you being the glue.</p>
+        <ul class="service-list">
+          <li><span class="service-dot"></span>Policy &amp; Compliance Writing</li>
+          <li><span class="service-dot"></span>Multi-Provider Scheduling</li>
+          <li><span class="service-dot"></span>Billing Ecosystem Design</li>
+          <li><span class="service-dot"></span>Staff Onboarding &amp; SOPs</li>
+        </ul>
+      </div>
+
+      <div class="service-promise fade-up" style="transition-delay:.48s">
         <div>
           <p class="eyebrow" style="margin-bottom:16px">The Promise</p>
           <p class="serif italic" style="font-size:22px;color:var(--gold);line-height:1.4;margin-bottom:20px">
             "Every engagement is custom-scoped. No templates. No packages off a shelf."
           </p>
           <p class="body-xs">
-            Starting at <span style="color:var(--gold)">$3,500/month</span>, every partnership begins with a bespoke proposal built around your exact operational gaps.
+            Starting at <span style="color:var(--gold)">$3,500/month</span>, every partnership begins with a bespoke proposal built around your exact practice operations.
           </p>
         </div>
-        <a href="#quiz" style="margin-top:32px;display:inline-flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:rgba(232,226,208,.6);transition:color .3s;" onmouseover="this.style.color='#e8e2d0'" onmouseout="this.style.color='rgba(232,226,208,.6)'">
+        <a href="#quiz" style="margin-top:32px;display:inline-flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:rgba(228,220,194,.6);transition:color .3s;" onmouseover="this.style.color='#e4dcc2'" onmouseout="this.style.color='rgba(228,220,194,.6)'">
           Apply for a Proposal <span>→</span>
         </a>
       </div>
@@ -1080,6 +1134,156 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; }
         <button onclick="scrollCarousel(1)"  style="background:none;border:1px solid rgba(232,226,208,.12);color:var(--gold);width:36px;height:36px;border-radius:2px;cursor:pointer;font-size:14px;transition:border-color .3s;" onmouseover="this.style.borderColor='rgba(232,226,208,.35)'" onmouseout="this.style.borderColor='rgba(232,226,208,.12)'">&#8594;</button>
       </div>
     </div>
+
+    <!-- Also serving (slim legacy-verticals row) -->
+    <div class="also-serving fade-up" style="margin-top:40px;padding:18px 24px;border-top:1px solid rgba(228,220,194,.07);border-bottom:1px solid rgba(228,220,194,.07);text-align:center;">
+      <p style="font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:rgba(212,208,198,.42);line-height:1.7;">
+        Beyond healthcare, we selectively support a small roster of legal, compliance, developer, and coaching leaders who pass our Personality Match. <a href="#quiz" style="color:var(--gold);border-bottom:1px solid rgba(228,220,194,.3);padding-bottom:1px;">Inquire →</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ TRUST & COMPLIANCE ═══════════════ -->
+<style>
+.trust-block {
+  position:relative; padding:96px 0;
+  background:linear-gradient(180deg, var(--surface-0) 0%, var(--bg) 100%);
+  border-top:1px solid rgba(184,196,201,.06);
+  border-bottom:1px solid rgba(184,196,201,.06);
+}
+.trust-header {
+  text-align:center; max-width:720px; margin:0 auto 56px;
+}
+.trust-eyebrow {
+  display:inline-flex; align-items:center; gap:10px;
+  padding:8px 18px; border-radius:100px;
+  background:rgba(184,196,201,.05); border:1px solid rgba(184,196,201,.12);
+  font-family:'Manrope',sans-serif; font-size:10px; letter-spacing:.35em; text-transform:uppercase;
+  color:var(--clinical); margin-bottom:22px;
+}
+.trust-grid {
+  display:grid; grid-template-columns:repeat(3, 1fr); gap:24px; max-width:1100px; margin:0 auto;
+}
+@media(max-width:900px){ .trust-grid { grid-template-columns:1fr; } }
+.trust-card {
+  background:var(--surface-1); border:1px solid rgba(184,196,201,.08);
+  border-radius:2px; padding:32px 28px 30px; position:relative;
+  transition:border-color .5s, transform .5s;
+}
+.trust-card:hover { border-color:rgba(184,196,201,.22); transform:translateY(-2px); }
+.trust-icon {
+  display:inline-flex; width:42px; height:42px; align-items:center; justify-content:center;
+  background:rgba(184,196,201,.06); border:1px solid rgba(184,196,201,.15);
+  border-radius:50%; color:var(--clinical); margin-bottom:20px;
+  font-size:22px;
+}
+.trust-card h4 {
+  font-family:'Noto Serif',serif; font-size:18px; font-weight:400;
+  color:var(--on-surface); margin-bottom:10px; letter-spacing:-0.005em;
+}
+.trust-card p {
+  font-size:13px; line-height:1.75; color:var(--on-variant);
+}
+.trust-checks {
+  max-width:1100px; margin:48px auto 0;
+  display:grid; grid-template-columns:repeat(4, 1fr); gap:16px;
+}
+@media(max-width:900px){ .trust-checks { grid-template-columns:1fr 1fr; } }
+.trust-check {
+  display:flex; align-items:flex-start; gap:10px;
+  padding:14px 16px; background:rgba(184,196,201,.03);
+  border-left:2px solid var(--clinical); border-radius:0 2px 2px 0;
+}
+.trust-check .check-icon {
+  color:var(--clinical); font-size:16px; margin-top:2px; flex-shrink:0;
+}
+.trust-check p {
+  font-family:'Manrope',sans-serif; font-size:11px; letter-spacing:.12em;
+  text-transform:uppercase; color:var(--on-variant); line-height:1.6;
+}
+.trust-fineprint {
+  max-width:720px; margin:48px auto 0; text-align:center;
+  font-size:12px; line-height:1.8; color:rgba(212,208,198,.5);
+  font-style:italic; font-family:'Noto Serif',serif;
+}
+</style>
+
+<section id="trust" class="trust-block section-panel">
+  <div class="container">
+
+    <div class="trust-header fade-up">
+      <span class="trust-eyebrow">
+        <span class="material-symbols-outlined" style="font-size:14px;">shield_lock</span>
+        HIPAA · BAA · US-Based
+      </span>
+      <h2 class="display-lg" style="margin-bottom:18px">HIPAA Is Your License.<br/><em class="gold-text">We Treat It That Way.</em></h2>
+      <p class="body-sm" style="max-width:620px;margin:0 auto;">
+        A VA who touches patient data without a signed BAA is a HIPAA violation waiting to happen — and under the law, your practice is the one on the hook. Every healthcare engagement begins with a signed BAA, minimum-necessary access, and a US-based team. Here's exactly how we operate before a single patient record is touched.
+      </p>
+    </div>
+
+    <div class="trust-grid">
+
+      <div class="trust-card fade-up reveal-left">
+        <span class="material-symbols-outlined trust-icon">assignment_turned_in</span>
+        <h4>BAA Executed Before Access</h4>
+        <p>A Business Associate Agreement is signed before any member of our team touches PHI, inboxes, scheduling, EHR, or billing systems. No exceptions, on every healthcare engagement.</p>
+      </div>
+
+      <div class="trust-card fade-up reveal-scale" style="transition-delay:.08s">
+        <span class="material-symbols-outlined trust-icon">lock</span>
+        <h4>HIPAA-Aware Operating Model</h4>
+        <p>Minimum-necessary access by design, documented data flows, encrypted credential handling, role-based tool provisioning, and incident protocols written before we ever begin.</p>
+      </div>
+
+      <div class="trust-card fade-up reveal-right" style="transition-delay:.16s">
+        <span class="material-symbols-outlined trust-icon">public_off</span>
+        <h4>US-Based Team &amp; Data Handling</h4>
+        <p>Every VA is US-based. We do not offshore healthcare work. PHI does not leave the country, and our tooling stack is selected specifically for HIPAA-supporting vendor tiers.</p>
+      </div>
+
+    </div>
+
+    <div class="trust-checks">
+      <div class="trust-check fade-up">
+        <span class="material-symbols-outlined check-icon">check_circle</span>
+        <p>BAA on File</p>
+      </div>
+      <div class="trust-check fade-up" style="transition-delay:.05s">
+        <span class="material-symbols-outlined check-icon">check_circle</span>
+        <p>Minimum-Necessary Access</p>
+      </div>
+      <div class="trust-check fade-up" style="transition-delay:.1s">
+        <span class="material-symbols-outlined check-icon">check_circle</span>
+        <p>Role-Based Provisioning</p>
+      </div>
+      <div class="trust-check fade-up" style="transition-delay:.15s">
+        <span class="material-symbols-outlined check-icon">check_circle</span>
+        <p>Encrypted Credential Handoff</p>
+      </div>
+      <div class="trust-check fade-up" style="transition-delay:.2s">
+        <span class="material-symbols-outlined check-icon">check_circle</span>
+        <p>HIPAA-Covered Tool Stack</p>
+      </div>
+      <div class="trust-check fade-up" style="transition-delay:.25s">
+        <span class="material-symbols-outlined check-icon">check_circle</span>
+        <p>Signed NDAs · Confidentiality</p>
+      </div>
+      <div class="trust-check fade-up" style="transition-delay:.3s">
+        <span class="material-symbols-outlined check-icon">check_circle</span>
+        <p>Incident Response Protocol</p>
+      </div>
+      <div class="trust-check fade-up" style="transition-delay:.35s">
+        <span class="material-symbols-outlined check-icon">check_circle</span>
+        <p>Offboarding Access Audit</p>
+      </div>
+    </div>
+
+    <p class="trust-fineprint fade-up">
+      "HIPAA-aware" means our operating model is built to support a covered entity's compliance posture. Your practice remains the Covered Entity under HIPAA — we serve as a responsible Business Associate, documented and bound by contract.
+    </p>
+
   </div>
 </section>
 
@@ -1184,7 +1388,7 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; }
           <span class="star-label">Pillar One</span>
         </div>
         <h4>The Honorable Client Standard</h4>
-        <p>We partner exclusively with leaders who bring their moral standards into every room — including their operations. This is not a tagline. It is our filter. If it does not align, we gracefully decline.</p>
+        <p>In healthcare, integrity isn't a value — it's the license. We partner with practice owners whose patient ethic matches ours. This is not a tagline. It is our filter. If it does not align, we gracefully decline.</p>
       </div>
 
       <div class="integrity-star-card fade-up reveal-scale" style="transition-delay:.2s">
@@ -1202,7 +1406,7 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; }
           <span class="star-label">Pillar Three</span>
         </div>
         <h4>Preventing Burnout by Design</h4>
-        <p>High-value leaders should not be drowning in operations. We exist to take that weight so you can lead with the clarity your mission deserves. Rest is not weakness — it is strategy.</p>
+        <p>Physicians and practice leaders should not be drowning in operations between patients. We exist to take that weight so you can practice with the clarity your patients deserve. Rest is not weakness — it is strategy.</p>
       </div>
 
       <div class="integrity-star-card fade-up reveal-right" style="transition-delay:.4s">
@@ -1211,7 +1415,7 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; }
           <span class="star-label">Pillar Four</span>
         </div>
         <h4>Absolute Discretion</h4>
-        <p>High-stakes environments demand a level of privacy that generic agencies cannot guarantee. What happens in your operation stays there. We are your silent, steadfast partner — always.</p>
+        <p>Healthcare environments demand a level of privacy — clinical, financial, personal — that generic agencies cannot guarantee. HIPAA-aware handling is the floor, not the ceiling. What happens in your practice stays there. Always.</p>
       </div>
 
     </div>
@@ -1221,17 +1425,18 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; }
       <div style="display:flex;align-items:center;gap:6px;margin-bottom:28px;justify-content:center;">
         <span style="color:var(--gold);font-size:13px;letter-spacing:4px;">✦ ✦ ✦</span>
       </div>
+      <!-- PLACEHOLDER TESTIMONIALS — paraphrased from recurring client sentiment. Replace with attributable quotes when available. -->
       <div id="t0" style="text-align:center;">
-        <p class="serif italic" style="font-size:20px;color:var(--gold);line-height:1.6;margin-bottom:20px;max-width:620px;margin-left:auto;margin-right:auto;">"They didn't just organize my practice. They clarified my vision. My team finally has a system that reflects who we actually are."</p>
-        <p class="eyebrow" style="color:rgba(203,198,187,.42)">— Senior Partner, Global Law Firm</p>
+        <p class="serif italic" style="font-size:20px;color:var(--gold);line-height:1.6;margin-bottom:20px;max-width:620px;margin-left:auto;margin-right:auto;">"She is honestly the easiest person to work with I have ever had in my practice. Whenever I try to find something to improve, I can't — everything just works."</p>
+        <p class="eyebrow" style="color:rgba(203,198,187,.42)">— Healthcare Practice Owner</p>
       </div>
       <div id="t1" style="display:none;text-align:center;">
-        <p class="serif italic" style="font-size:20px;color:var(--gold);line-height:1.6;margin-bottom:20px;max-width:620px;margin-left:auto;margin-right:auto;">"For the first time in years I felt like someone actually understood the weight I was carrying. And then they took some of it."</p>
-        <p class="eyebrow" style="color:rgba(203,198,187,.42)">— Founder, Healthcare Group</p>
+        <p class="serif italic" style="font-size:20px;color:var(--gold);line-height:1.6;margin-bottom:20px;max-width:620px;margin-left:auto;margin-right:auto;">"I love having her on my team. There is nothing I would change. She steps into the practice like she's been here for years — patients never feel the handoff."</p>
+        <p class="eyebrow" style="color:rgba(203,198,187,.42)">— Clinic Owner &amp; Provider</p>
       </div>
       <div id="t2" style="display:none;text-align:center;">
-        <p class="serif italic" style="font-size:20px;color:var(--gold);line-height:1.6;margin-bottom:20px;max-width:620px;margin-left:auto;margin-right:auto;">"The Personality Match process was unlike anything I've experienced hiring. I knew immediately this would be different."</p>
-        <p class="eyebrow" style="color:rgba(203,198,187,.42)">— Executive Coach, 7-Figure Practice</p>
+        <p class="serif italic" style="font-size:20px;color:var(--gold);line-height:1.6;margin-bottom:20px;max-width:620px;margin-left:auto;margin-right:auto;">"Working with her has been one of the best decisions I've made for my practice. Reliable, discreet, and genuinely cares about our patients — I don't have feedback for improvement, which is rare."</p>
+        <p class="eyebrow" style="color:rgba(203,198,187,.42)">— Boutique Medical Practice Founder</p>
       </div>
       <div class="testimonial-dots" style="margin-top:28px;justify-content:center;">
         <button id="dot0" class="t-dot" style="width:24px;background:rgba(232,226,208,.52);" onclick="switchT(0)"></button>
@@ -1248,7 +1453,7 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; }
   <div class="container">
     <div class="fade-up text-center" style="margin-bottom:80px;">
       <p class="eyebrow" style="margin-bottom:20px">The Framework</p>
-      <h2 class="display-lg">How We <em class="gold-text">Illuminate</em> Your Operations</h2>
+      <h2 class="display-lg">From First Call to <em class="gold-text">Fully Integrated</em> in 30 Days.</h2>
     </div>
     <div class="process-grid">
       <div class="process-connector"></div>
@@ -1259,8 +1464,8 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; }
       </div>
       <div class="process-step fade-up reveal-left" style="transition-delay:.1s">
         <div class="process-num">02</div>
-        <h4 class="serif" style="font-size:19px;font-weight:400;color:var(--on-surface);margin-bottom:12px">Operational Audit</h4>
-        <p class="body-xs">A discovery session that maps your full workflow before we prescribe anything.</p>
+        <h4 class="serif" style="font-size:19px;font-weight:400;color:var(--on-surface);margin-bottom:12px">Practice Audit</h4>
+        <p class="body-xs">A discovery session that maps intake, clinical workflow, billing, and patient communication before we prescribe anything.</p>
       </div>
       <div class="process-step fade-up reveal-right" style="transition-delay:.2s">
         <div class="process-num">03</div>
@@ -1270,7 +1475,7 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; }
       <div class="process-step fade-up reveal-right" style="transition-delay:.3s">
         <div class="process-num">04</div>
         <h4 class="serif" style="font-size:19px;font-weight:400;color:var(--on-surface);margin-bottom:12px">30-Day Transition</h4>
-        <p class="body-xs">Full integration into your operation within four weeks — or we make it right.</p>
+        <p class="body-xs">Full integration into your practice within four weeks — including BAA execution and HIPAA-aware access provisioning. Or we make it right.</p>
       </div>
     </div>
   </div>
@@ -1283,8 +1488,8 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; }
     <div class="fade-up text-center" style="margin-bottom:56px;">
       <p class="eyebrow" style="margin-bottom:20px">The Filter</p>
       <h2 class="display-lg" style="margin-bottom:20px">The Personality Match</h2>
-      <p class="body-sm" style="max-width:520px;margin:0 auto;">
-        This isn't a contact form. It's the beginning of a discernment process. We want a mutual "Hell Yes" — which means we need to know <em>who you are</em> before we discuss scope. Complete all 15 questions, then share your contact details to receive your results.
+      <p class="body-sm" style="max-width:560px;margin:0 auto;">
+        This isn't a contact form. It's a 15-question fit check — 5 minutes — so we can tell you quickly whether we're the right partner for your practice (and whether you're a fit for us). You'll get a clear yes, a clear no, or a clear next step.
       </p>
     </div>
 
@@ -1346,13 +1551,16 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; }
 
         <!-- ─── STEP 5 ─── -->
         <div class="quiz-step" id="step-5" style="display:none">
-          <p class="eyebrow quiz-q-label">Section 2 of 5 · Your Business</p>
-          <h3 class="serif quiz-question" style="font-size:22px;font-weight:400;color:var(--on-surface)">What industry best describes your work?</h3>
+          <p class="eyebrow quiz-q-label">Section 2 of 5 · Your Practice</p>
+          <h3 class="serif quiz-question" style="font-size:22px;font-weight:400;color:var(--on-surface)">Which best describes your practice?</h3>
           <div class="quiz-options">
-            <div class="quiz-option" onclick="pick(this,'q5','A')"><div class="quiz-option-dot"></div><p class="quiz-option-text">Healthcare / Medical / Wellness</p></div>
-            <div class="quiz-option" onclick="pick(this,'q5','B')"><div class="quiz-option-dot"></div><p class="quiz-option-text">Legal / Compliance / Finance</p></div>
-            <div class="quiz-option" onclick="pick(this,'q5','C')"><div class="quiz-option-dot"></div><p class="quiz-option-text">Tech / Development / SaaS</p></div>
-            <div class="quiz-option" onclick="pick(this,'q5','D')"><div class="quiz-option-dot"></div><p class="quiz-option-text">Coaching / Consulting / Speaking</p></div>
+            <div class="quiz-option" onclick="pick(this,'q5','A')"><div class="quiz-option-dot"></div><p class="quiz-option-text">Primary care / family medicine</p></div>
+            <div class="quiz-option" onclick="pick(this,'q5','B')"><div class="quiz-option-dot"></div><p class="quiz-option-text">Specialty practice (cardiology, derm, ortho, GI, etc.)</p></div>
+            <div class="quiz-option" onclick="pick(this,'q5','C')"><div class="quiz-option-dot"></div><p class="quiz-option-text">Dental or orthodontic</p></div>
+            <div class="quiz-option" onclick="pick(this,'q5','D')"><div class="quiz-option-dot"></div><p class="quiz-option-text">Behavioral or mental health</p></div>
+            <div class="quiz-option" onclick="pick(this,'q5','E')"><div class="quiz-option-dot"></div><p class="quiz-option-text">Med spa, aesthetics, or wellness</p></div>
+            <div class="quiz-option" onclick="pick(this,'q5','F')"><div class="quiz-option-dot"></div><p class="quiz-option-text">Boutique clinic or multi-provider group</p></div>
+            <div class="quiz-option" onclick="pick(this,'q5','G')"><div class="quiz-option-dot"></div><p class="quiz-option-text">Outside healthcare — we also serve select legal, compliance, developer, and coaching leaders</p></div>
           </div>
           <button class="quiz-btn" onclick="next(5)">Continue</button>
         </div>
@@ -1509,6 +1717,18 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; }
               <label class="form-label">Website</label>
               <input class="form-input" type="text" id="website" placeholder="yoursite.com"/>
             </div>
+
+            <!-- HIPAA / BAA acknowledgement -->
+            <div class="form-group" style="margin-top:18px;padding:18px 20px;background:rgba(184,196,201,.04);border:1px solid rgba(184,196,201,.12);border-left:2px solid #b8c4c9;border-radius:0 2px 2px 0;">
+              <label style="display:flex;align-items:flex-start;gap:12px;cursor:pointer;">
+                <input type="checkbox" id="baa-ack" style="margin-top:4px;width:16px;height:16px;accent-color:#b8c4c9;flex-shrink:0;"/>
+                <span style="font-size:12px;line-height:1.7;color:rgba(212,208,198,.78);letter-spacing:.01em;">
+                  <strong style="color:var(--clinical);letter-spacing:.1em;text-transform:uppercase;font-size:10px;display:block;margin-bottom:6px;">Healthcare Practices</strong>
+                  My practice handles PHI. I understand stewardship engagements are HIPAA-aware, and a Business Associate Agreement (BAA) will be executed before any access is granted. <em style="color:rgba(212,208,198,.55);">(Leave unchecked if your inquiry is outside healthcare.)</em>
+                </span>
+              </label>
+            </div>
+
             <p id="form-error" style="display:none;color:#ffb4ab;font-size:13px;margin:8px 0 0;"></p>
             <p class="form-note">By submitting, you agree to be contacted by Shine Your Light On It regarding your application. We respect your privacy and never sell your information.</p>
             <button type="button" onclick="submitForm()" class="quiz-btn" id="submit-btn">
@@ -1540,10 +1760,10 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; }
         <span class="eyebrow" style="color:rgba(232,226,208,.42)">Applications Open</span>
       </div>
       <h2 class="display-lg" style="margin-bottom:20px">
-        Let's clarify your<br/><em class="gold-text">operations.</em>
+        Let's see if we can<br/>take this <em class="gold-text">off your plate.</em>
       </h2>
-      <p class="body-sm" style="max-width:460px;margin:0 auto 48px;">
-        If what you've read resonates — the values, the model, the standard — the next step is the Personality Match. It takes 5 minutes.
+      <p class="body-sm" style="max-width:520px;margin:0 auto 48px;">
+        Take the 5-minute Personality Match. You'll get a clear yes, a clear no, or a clear next step — and a sense of exactly what we'd take off your plate before any call is scheduled.
       </p>
       <a href="#quiz" class="btn-primary">Begin the Match</a>
     </div>
@@ -1555,13 +1775,18 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; }
   <div class="footer-inner">
     <div class="footer-brand">
       <div class="footer-brand-name neon-brand">Shine Your Light On It</div>
-      <p class="body-xs" style="margin-bottom:16px">Premium operational stewardship for honorable leaders. US-Based. Faith-rooted. Uncompromising.</p>
+      <p class="body-xs" style="margin-bottom:14px">We run the ops your healthcare practice is drowning in. US-Based. HIPAA-aware. BAAs on every engagement. Faith-rooted. Uncompromising.</p>
+      <p class="body-xs" style="margin-bottom:16px;color:var(--clinical);font-size:11px;letter-spacing:.12em;text-transform:uppercase;">
+        <span class="material-symbols-outlined" style="font-size:13px;vertical-align:-2px;margin-right:4px;">shield_lock</span>
+        BAAs executed on every healthcare engagement
+      </p>
       <p class="footer-copy">© 2025 Shine Your Light On It · 30-Day Transition Guarantee</p>
     </div>
     <div class="footer-links-group">
       <div>
         <p class="footer-col-label">Navigate</p>
-        <a class="footer-link" href="#services">Services</a>
+        <a class="footer-link" href="#services">Practices</a>
+        <a class="footer-link" href="#trust">Trust &amp; HIPAA</a>
         <a class="footer-link" href="#about">The Dossier</a>
         <a class="footer-link" href="#process">Process</a>
         <a class="footer-link" href="#quiz">Partnership</a>
@@ -1570,8 +1795,8 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; }
         <p class="footer-col-label">Legal</p>
         <a class="footer-link" href="#">Privacy Policy</a>
         <a class="footer-link" href="#">Terms of Service</a>
+        <a class="footer-link" href="#">HIPAA &amp; BAA Info</a>
         <a class="footer-link" href="#">Journal</a>
-        <a class="footer-link" href="#">Instagram</a>
       </div>
     </div>
   </div>
@@ -1708,6 +1933,7 @@ function submitForm(){
   const phone     = document.getElementById('phone').value.trim();
   const email     = document.getElementById('email').value.trim();
   const website   = document.getElementById('website').value.trim();
+  const baaAck    = document.getElementById('baa-ack') ? document.getElementById('baa-ack').checked : false;
   const errEl     = document.getElementById('form-error');
 
   if(!firstName){ errEl.textContent = 'Please enter your first name.'; errEl.style.display='block'; return; }
@@ -1726,7 +1952,7 @@ function submitForm(){
     q2:  {'A':'Foundational to every decision','B':'Influences ethics, stays private','C':'Not part of professional framework'},
     q3:  {'A':'Direct, compassionate conversation','B':'Give it time and hope','C':'Quietly replace and move on'},
     q4:  {'A':'Solo founder / solopreneur','B':'Executive at growing firm (2–15)','C':'Leader of established org (15+)'},
-    q5:  {'A':'Healthcare / Medical','B':'Legal / Compliance / Finance','C':'Tech / Development / SaaS','D':'Coaching / Consulting / Speaking'},
+    q5:  {'A':'Primary care / family medicine','B':'Specialty practice','C':'Dental / orthodontic','D':'Behavioral / mental health','E':'Med spa / aesthetics / wellness','F':'Boutique clinic / multi-provider group','G':'Outside healthcare (legal/compliance/dev/coaching)'},
     q6:  {'A':'Under $250K','B':'$250K – $1M','C':'$1M – $5M','D':'$5M+'},
     q7:  {'A':'Overwhelming — drowning in admin','B':'Functional but fragile','C':'Strong, ready for upgrade'},
     q8:  {'A':'Inbox & communications','B':'Project & deadline tracking','C':'Client onboarding & relationships','D':'Financial oversight & compliance'},
@@ -1772,6 +1998,7 @@ function submitForm(){
       applicant_email: email,
       phone: phone,
       website: website,
+      baa_acknowledged: baaAck ? 'YES — Healthcare practice, BAA expected' : 'No / Outside healthcare',
       fit_flag: result.fit ? 'FIT — Redirected to Calendly' : 'Not a Fit',
       score: score,
       answers_summary: qLabels,
