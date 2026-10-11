@@ -14,10 +14,10 @@ LinkedIn posts / landing-linkedin pages / Eventbrite search / email / referrals
           confirmation + reminder emails (Eventbrite)
                           │
                           ▼
-     LIVE WORKSHOP (45 min, Zoom) ── ends with the 1:1 Ops Audit offer ──┐
+     LIVE WORKSHOP (30 min, Zoom) ─ ends with the 1:1 Bottleneck Audit ──┐
                           │                                               │
                           ▼                                               ▼
-  workshop-replay.html (replay + Leak Checklist + offer)   Calendly: free 1:1 Ops Audit
+  workshop-replay.html (replay + Scorecard + offer)    Calendly: free 1:1 Bottleneck Audit
                           │                                               │
               5-email follow-up sequence  ─────────────────────────────────┤
                                                                           ▼
@@ -30,33 +30,37 @@ LinkedIn posts / landing-linkedin pages / Eventbrite search / email / referrals
 |---|---|
 | `services.html` | Lists every service and sells the partnership. Two calls to action: book a 1:1 now, or join the workshop if not ready yet. |
 | `workshop.html` | Landing page for the free event. Every button opens Eventbrite registration. |
-| `workshop-replay.html` | The page you send attendees afterwards: replay, interactive Leak Checklist, and the 1:1 offer. Hidden from search engines (`noindex`). |
+| `workshop-replay.html` | The page you send attendees afterwards: replay, interactive Bottleneck Scorecard, and the 1:1 offer. Hidden from search engines (`noindex`). |
 | `funnel-config.js` | **The only file you need to edit:** Eventbrite link, event date, replay video and Calendly link. |
 | `index.html`, `landing-linkedin*.html` | The existing site and LinkedIn ad pages. Keep sending traffic to them, and link them to the workshop. |
+
+**Positioning:** the workshop is deliberately **open to any overwhelmed owner** and speaks in their words: *drowning, stuck in the weeds, capacity limit, friction, chaos, bottleneck*. Healthcare leaders are still the ideal client. The workshop covers HIPAA-safe delegation as one segment, and the registration questions flag healthcare leads so you can follow up with them first. Services and the 1:1 call stay healthcare-first.
+
+**Why 30 minutes:** your best clients are the busiest people. A short session they can join on a lunch break, plus a replay sent to everyone who registers, means "too busy" stops being a reason to skip it. **Treat every registration as a lead, even if they never show up.**
 
 ---
 
 ## 1. Create the Eventbrite event (≈20 min)
 
 1. Eventbrite → **Create event**. Choose **Online event** and **Free** ticket.
-2. **Title:** `Get Out of the Back Office: A Free Workshop for Practice Owners`
-3. **Summary (140 chars):** `The 5 back-office leaks costing your practice, what to delegate first, and how to do it without HIPAA risk. Live, 45 min.`
-4. **Category:** Health → Medical, or Business → Startups & Small Business. **Tags:** practice management, dental practice, behavioral health, healthcare operations, HIPAA, virtual assistant, private practice
+2. **Title:** `Out of the Weeds: A Free 30-Minute Workshop for Business Owners Who Are Drowning in the Day-to-Day`
+3. **Summary (140 chars):** `Stuck in the weeds? Find your bottleneck, cut the friction, and get past your capacity limit. Live, 30 min, free. Replay included.`
+4. **Category:** Business → Startups & Small Business. **Tags:** overwhelm, burnout, productivity, delegation, small business, business owner, operations, virtual assistant, time management, private practice
 5. **Online event page:** paste your Zoom link there. Eventbrite only shows it to registered attendees and puts it in their confirmation and reminder emails.
 6. **Description:** paste the block below.
 7. **Order form → Custom questions.** These are how you qualify leads, so make all of them required:
-   - *Which best describes your practice?* Behavioral health / addiction treatment · Dental · Physician / internal medicine · Other healthcare · Not in healthcare
-   - *Your role?* Owner / founder · Executive director / administrator · Practice manager · Other
-   - *Biggest back-office headache right now?* Patient inbox · Scheduling & no-shows · Staff compliance / credentials · Policies & procedures · Admissions · All of it
-   - *Would you like a free 1:1 Ops Audit after the workshop?* Yes, please reach out · Maybe later · No thanks
+   - *Which best describes your business?* Healthcare practice or treatment program · Legal / compliance · Consulting / agency · Coaching · Other service business · Other
+   - *Your role?* Owner / founder · Executive director / administrator · Manager · Other
+   - *Where do you feel most stuck right now?* Drowning in email & messages · Scheduling & follow-up chaos · I'm the bottleneck on every decision · No systems or documentation · Compliance & admin · All of it
+   - *Would you like a free 1:1 Bottleneck Audit after the workshop?* Yes, please reach out · Maybe later · No thanks
    - Checkbox: *Yes, send me the replay and occasional practice-operations tips by email. Unsubscribe any time.* (This gives you clear permission to email them after the event.)
-8. **Confirmation page / message:** "You're in! Add it to your calendar now. Before the session, take 10 minutes to score your practice: [link to workshop-replay.html#checklist]"
+8. **Confirmation page / message:** "You're in! Add it to your calendar now. Can't make it live? No problem. The replay will be emailed to you. Want a head start? Take the Bottleneck Scorecard: [link to workshop-replay.html#checklist]"
 9. Publish, then copy the event URL and the number at the end of it into `funnel-config.js`:
    ```js
-   eventbriteUrl: "https://www.eventbrite.com/e/get-out-of-the-back-office-tickets-1234567890",
+   eventbriteUrl: "https://www.eventbrite.com/e/out-of-the-weeds-tickets-1234567890",
    eventbriteEventId: "1234567890",
    workshopDate: "Thursday, November 12",
-   workshopTime: "12:00 PM ET · 45 minutes · Live on Zoom",
+   workshopTime: "12:00 PM ET · 30 minutes · Live on Zoom",
    workshopStartsAt: "2026-11-12T12:00:00-05:00",
    ```
    With `eventbriteEventId` set, people register in a pop-up on your own page without leaving it.
@@ -65,36 +69,36 @@ LinkedIn posts / landing-linkedin pages / Eventbrite search / email / referrals
 
 ### Eventbrite description (paste in)
 
-> **Still answering the patient inbox at 10pm? This one's for you.**
+> **Drowning in the day-to-day? Stuck in the weeds when you should be leading?**
 >
-> If you own or run a behavioral health program, dental practice or physician practice, you probably spend too much of your week running the back office: patient messages, no-shows, staff certifications, policies nobody's touched in years.
+> You built the business, and now it runs on you. Every email, every follow-up, every decision goes through you. You've hit a capacity limit, and working harder isn't fixing it.
 >
-> In this free 45-minute live workshop you'll learn:
-> - **The 5 back-office leaks** costing practices time, revenue and compliance risk, and how to spot yours
-> - **What to delegate first** and what only you should keep
-> - **How to delegate without HIPAA risk**: BAAs, minimum-necessary access, and the offshoring red flags to avoid
-> - **A 30-day handoff plan** you can start the same week
-> - **Live Q&A** about your own operational problems
+> In this free 30-minute live workshop you'll learn:
+> - **Are you the bottleneck?** The 5 signs you've hit your capacity limit
+> - **Find the friction:** see where your hours really go
+> - **Get out of the weeds:** the simple filter for what to hand off first
+> - **Delegate without dropping the ball:** keep quality, confidentiality and control (including HIPAA basics for healthcare practices)
+> - **A 30-day handoff plan**, plus live Q&A
 >
-> **Bonus for attendees:** the Back-Office Leak Checklist, plus priority access to a free 1:1 Ops Audit of your practice.
+> **Too busy to attend live?** Register anyway. Everyone gets the replay.
 >
-> Can't make it live? Register anyway and the replay will be emailed to you.
+> **Bonus:** the Bottleneck Scorecard, plus priority access to a free 1:1 Bottleneck Audit of your business.
 >
-> *Hosted by Shine Your Light On It, a US-based, HIPAA-aware operations team for healthcare practices.*
+> *Hosted by Shine Your Light On It, a US-based operations and virtual-assistant team with a specialty in healthcare practices.*
 
 ---
 
-## 2. Run the workshop (45 min)
+## 2. Run the workshop (30 min)
 
 | Min | Segment | Notes |
 |---|---|---|
-| 0–3 | Welcome + "type your specialty in the chat" | Gets them engaged immediately |
-| 3–15 | The 5 leaks | Tell one real (anonymized) story for each |
-| 15–23 | Delegate-first framework | Sort tasks into "only me" and "a trained team" |
-| 23–31 | HIPAA-safe delegation | BAA, minimum-necessary access, offshoring risks. This is what sets you apart |
-| 31–36 | 30-day handoff plan | Walk through your own 4-step process |
-| 36–40 | **The offer** | "If you want help doing this in your practice, book a free 1:1 Ops Audit. Attendees get first pick of this week's spots." Drop the Calendly link in the chat **twice** |
-| 40–45 | Q&A | Answer questions, then drop the link a final time |
+| 0–2 | Welcome + "one word for how your week feels?" in the chat | You'll hear drowning, chaos, stuck. Reflect those words back throughout |
+| 2–8 | Are you the bottleneck? | The 5 signs. Tell one real (anonymized) story |
+| 8–14 | Find the friction | Have them list everything they did yesterday and circle what only they could do |
+| 14–19 | Get out of the weeds | The "only me vs. anyone trained" filter |
+| 19–23 | Delegate without dropping the ball | Trust, confidentiality, and 60 seconds on HIPAA/BAA for healthcare. This is what sets you apart |
+| 23–26 | **The offer** | "If you want help finding your bottleneck, book a free 1:1 Bottleneck Audit. Attendees get first pick of this week's spots." Drop the Calendly link in the chat **twice** |
+| 26–30 | Q&A + 30-day plan recap | Drop the link one final time |
 
 ---
 
@@ -103,40 +107,41 @@ LinkedIn posts / landing-linkedin pages / Eventbrite search / email / referrals
 Eventbrite → **Marketing → Email campaigns** (or export attendees as CSV and send from Gmail or your email tool). Send emails 2–5 **only to people who checked the consent box**.
 
 **Email 1 — Right after the event (everyone registered, including no-shows)**
-> Subject: Your replay + the Leak Checklist
+> Subject: Your replay (30 min) + the Bottleneck Scorecard
 >
 > Hi {first name},
-> Thanks for registering for *Get Out of the Back Office*. Here's everything in one place:
-> → Replay + Back-Office Leak Checklist: [workshop-replay.html]
-> Score your practice (10 min). If you land under 10 out of 15, a 1:1 Ops Audit will pay for itself: [Calendly]
+> Whether you made it live or got pulled into the weeds (it happens!), here's everything in one place:
+> → Replay + Bottleneck Scorecard: [workshop-replay.html]
+> It takes 10 minutes. If you score under 10 out of 15, a free 1:1 Bottleneck Audit will be worth your time: [Calendly]
 > — {Your name}
 
 **Email 2 — Day 2**
-> Subject: The leak most practices miss
-> One story about staff certifications lapsing quietly, and what it cost. → Book your Ops Audit.
+> Subject: You're not lazy. You're at capacity.
+> Why working harder doesn't get you past a capacity limit, with one short story. → Book your Bottleneck Audit.
 
 **Email 3 — Day 4**
-> Subject: "Can a VA even touch PHI?"
-> Explain BAAs and minimum-necessary access in plain English, with the 3 questions to ask any VA. → Book your Ops Audit.
+> Subject: The friction you stopped noticing
+> The "yesterday list" exercise from the workshop, written up in 3 steps. → Book your Bottleneck Audit.
 
 **Email 4 — Day 6**
-> Subject: What a 30-day handoff actually looks like
-> The 4 steps, plus a testimonial. → Book your Ops Audit.
+> Subject: From chaos to calm in 30 days
+> The 4-step handoff, plus a testimonial. Add one line for healthcare readers: "Yes, we sign a BAA." → Book your Bottleneck Audit.
 
 **Email 5 — Day 8 (last call)**
-> Subject: Last call for attendee audit spots
-> Attendee priority for this round of audits closes Friday. → [Calendly]. After that, you're still welcome at the next workshop: [workshop.html].
+> Subject: Still drowning? Last call for audit spots
+> Attendee priority for this round of audits closes Friday. → [Calendly]. After that, you're welcome at the next workshop: [workshop.html].
 
-**People who answered "Yes, please reach out"** on the registration form are your warmest leads. Email them **personally within 24 hours**, without waiting for the sequence.
+**Healthcare leads who answered "Yes, please reach out"** on the registration form are your top priority. Email them **personally within 24 hours**. Then do the same for other "yes" answers.
+
 
 ---
 
 ## 4. Driving registrations
 
-- **LinkedIn:** one post per week about one "leak", with a link to `workshop.html` in the first comment. Update the CTA on the existing `landing-linkedin*.html` ad pages to offer the workshop as a softer second option.
+- **LinkedIn:** one post per week built on one pain word: *drowning*, *stuck in the weeds*, *capacity limit*, *friction*, *chaos*, *bottleneck*. Example hook: "If every decision in your business goes through you, you're not the boss. You're the bottleneck." Put the `workshop.html` link in the first comment. Update the CTA on the existing `landing-linkedin*.html` ad pages to offer the workshop as a softer second option.
 - **Eventbrite discovery:** the tags and category above help practice owners find you through Eventbrite search.
-- **Direct invites:** message 10–20 practice owners or managers you know each week: "I'm running a free 45-min session on getting out of the back office. Thought of you."
-- **Partners:** dental study clubs, behavioral-health associations and practice-management consultants often share free educational events.
+- **Direct invites:** message 10–20 owners you know each week: "I'm running a free 30-min session for owners who feel stuck in the weeds. There's a replay if you're slammed. Thought of you."
+- **Partners:** dental study clubs, behavioral-health associations, chambers of commerce, BNI chapters, women-in-business groups and practice-management consultants often share free educational events.
 - **Email signature:** "Free workshop for practice owners → [link]"
 
 ---
@@ -146,15 +151,15 @@ Eventbrite → **Marketing → Email campaigns** (or export attendees as CSV and
 | Metric | Where to find it | Healthy starting target |
 |---|---|---|
 | Registrations | Eventbrite | 25+ |
-| Show-up rate | Zoom attendees ÷ registrations | 30–45% for free online events |
+| Show-up rate | Zoom attendees ÷ registrations | 30–45% for free online events (replay viewers count too) |
 | Audits booked | Calendly | 10–20% of live attendees |
 | Proposals sent | Your notes | Most qualified audits |
 | Clients signed | — | 1 per 1–2 sessions is a great early result |
 
-Look for the step with the biggest drop: low registrations means more promotion; low show-up means better reminders; few bookings means a stronger offer or more time on the offer segment.
+Look for the step with the biggest drop: low registrations means more promotion; low show-up means better reminders; few bookings means a stronger offer or more time on the offer segment. Also track **how many leads are healthcare**. If it's too few, put more promotion into the healthcare partner channels.
 
 ---
 
 ## 6. HIPAA note
 
-The workshop and the Ops Audit are about **workflows only**. Remind people at the start not to share any patient information in the chat or on the call. Don't collect PHI on Eventbrite or Calendly forms. A BAA comes later, once a partnership begins.
+The workshop and the Bottleneck Audit are about **workflows only**. Remind people at the start not to share any patient information in the chat or on the call. Don't collect PHI on Eventbrite or Calendly forms. A BAA comes later, once a partnership begins.

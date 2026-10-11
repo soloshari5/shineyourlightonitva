@@ -7,7 +7,7 @@ window.FUNNEL = {
   calendlyUrl: "https://calendly.com/soloshari/60min",
 
   // Eventbrite — paste your event page URL once the event is created.
-  // e.g. "https://www.eventbrite.com/e/get-out-of-the-back-office-tickets-123456789012"
+  // e.g. "https://www.eventbrite.com/e/out-of-the-weeds-tickets-123456789012"
   eventbriteUrl: "",
 
   // Optional: the number at the end of the Eventbrite URL above.
@@ -17,7 +17,7 @@ window.FUNNEL = {
 
   // What visitors see for the next live session.
   workshopDate: "Thursday · Date announced soon",
-  workshopTime: "12:00 PM ET · 45 minutes · Live on Zoom",
+  workshopTime: "12:00 PM ET · 30 minutes · Live on Zoom",
   // ISO date-time for the countdown (leave "" to hide the countdown).
   // e.g. "2026-11-12T12:00:00-05:00"
   workshopStartsAt: "",
