@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Workshop Replay &amp; Checklist | Shine Your Light On It</title>
+<meta name="robots" content="noindex">
+<meta name="description" content="Replay of Out of the Weeds, the Bottleneck Scorecard, and your attendee 1:1 Bottleneck Audit.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="funnel.css">
+<script src="funnel-config.js"></script>
+</head>
+<body class="has-mobile-cta">
+
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="services.html">
+      <svg width="24" height="24" viewBox="0 0 26 26" fill="none" aria-hidden="true"><circle cx="13" cy="13" r="2.5" fill="#e8e2d0"/><g stroke="#e8e2d0" stroke-width="1" opacity=".5"><line x1="13" y1="2" x2="13" y2="7"/><line x1="13" y1="19" x2="13" y2="24"/><line x1="2" y1="13" x2="7" y2="13"/><line x1="19" y1="13" x2="24" y2="13"/></g></svg>
+      Shine Your Light On It
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#replay">Replay</a></li>
+      <li><a href="#checklist">Checklist</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a class="btn btn-primary" data-calendly href="#">Claim My 1:1 Audit</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" style="padding-bottom:30px">
+  <div class="wrap">
+    <span class="eyebrow">Thank you for joining</span>
+    <h1>Here's your replay<br>and <em>your next step.</em></h1>
+    <p class="lead">Watch it again (it's only 30 minutes), score your business with the Bottleneck Scorecard below, and if you want help getting out of the weeds, claim your free 1:1 Bottleneck Audit.</p>
+  </div>
+</header>
+
+<section id="replay" style="padding-top:10px">
+  <div class="wrap">
+    <div class="video" id="video">Replay will appear here shortly. Check back soon or watch your inbox.</div>
+  </div>
+</section>
+
+<section style="padding-top:10px">
+  <div class="wrap">
+    <div class="band reveal">
+      <div class="split">
+        <div>
+          <span class="eyebrow">Attendee offer</span>
+          <h2>Your free 1:1 <em>Bottleneck Audit</em></h2>
+          <p class="lead">In 60 minutes we find exactly where you're stuck and you leave with a prioritized handoff plan for your business. If you're in healthcare, it's HIPAA-safe too.</p>
+          <ul class="ticks">
+            <li>Your scorecard results, explained</li>
+            <li>The 3 tasks to hand off first</li>
+            <li>An honest answer on whether working together makes sense</li>
+          </ul>
+        </div>
+        <div class="panel center">
+          <div class="price">Free</div>
+          <p class="muted small" style="margin-top:8px">Priority booking for workshop attendees · Limited spots each week</p>
+          <a class="btn btn-primary" data-calendly href="#" style="width:100%">Claim My 1:1 Bottleneck Audit</a>
+          <p class="btn-note">Want to see everything we handle first? <a href="services.html#services">Browse services →</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="checklist">
+  <div class="wrap" style="max-width:820px">
+    <span class="eyebrow">Your workshop bonus</span>
+    <h2>The <em>Bottleneck</em> Scorecard</h2>
+    <p class="lead">Tick everything that's true for your business <strong style="color:var(--gold)">right now</strong>. Every unticked box is friction, and probably a place where you're the bottleneck.</p>
+    <div class="checklist" id="cl">
+      <h3>1 · Inbox &amp; communication</h3>
+      <label><input type="checkbox"> Client and customer messages get answered within one business day, and not by me.</label>
+      <label><input type="checkbox"> There are written rules for what needs me and what doesn't.</label>
+      <label><input type="checkbox"> I don't work through my inbox at night or on weekends.</label>
+      <h3>2 · Calendar &amp; follow-up</h3>
+      <label><input type="checkbox"> Someone else handles scheduling, rescheduling and reminders.</label>
+      <label><input type="checkbox"> Leads, no-shows and loose ends get followed up without me remembering.</label>
+      <label><input type="checkbox"> I have protected time each week for strategy and growth work.</label>
+      <h3>3 · Systems &amp; documentation</h3>
+      <label><input type="checkbox"> Our key processes are written down, not just stored in my head.</label>
+      <label><input type="checkbox"> Deadlines, renewals and compliance items are tracked in one place.</label>
+      <label><input type="checkbox"> A new hire could get up to speed without me training them personally.</label>
+      <h3>4 · Capacity &amp; delegation</h3>
+      <label><input type="checkbox"> I could take on more clients or patients next month without something breaking.</label>
+      <label><input type="checkbox"> Work keeps moving when I'm out for a week.</label>
+      <label><input type="checkbox"> I spend most of my week on work only I can do.</label>
+      <h3>5 · Trust &amp; confidentiality</h3>
+      <label><input type="checkbox"> Everyone with access to sensitive data has signed an agreement (NDA, or a BAA in healthcare).</label>
+      <label><input type="checkbox"> System access is role-based and removed promptly when someone leaves.</label>
+      <label><input type="checkbox"> I know where client data lives and who can access it.</label>
+    </div>
+    <div class="score" aria-live="polite">
+      <strong id="score-num" style="color:var(--gold)">0 / 15</strong> — <span id="score-msg">Start ticking to see your score.</span>
+    </div>
+    <div class="btn-row no-print" style="margin-top:22px">
+      <a class="btn btn-primary" data-calendly href="#">Review My Score on a 1:1 Call</a>
+      <button class="btn btn-ghost" type="button" onclick="window.print()">Print / Save as PDF</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© Shine Your Light On It · US-Based · HIPAA-Aware</span>
+    <span><a href="services.html">Services</a> · <a href="workshop.html">Workshop</a> · <a data-contact-email href="#"></a></span>
+  </div>
+</footer>
+
+<div class="mobile-cta">
+  <a class="btn btn-primary" data-calendly href="#">Claim My Free 1:1 Audit</a>
+</div>
+
+<script>
+  (function () {
+    var url = window.FUNNEL && window.FUNNEL.replayEmbedUrl;
+    if (url) {
+      var v = document.getElementById('video'), f = document.createElement('iframe');
+      f.src = url; f.title = 'Workshop replay'; f.allow = 'autoplay; fullscreen; picture-in-picture'; f.allowFullscreen = true;
+      v.textContent = ''; v.appendChild(f);
+    }
+    var boxes = document.querySelectorAll('#cl input'), num = document.getElementById('score-num'), msg = document.getElementById('score-msg');
+    function update() {
+      var n = 0; boxes.forEach(function (b) { if (b.checked) n++; });
+      num.textContent = n + ' / ' + boxes.length;
+      msg.textContent = n >= 13 ? 'Running smoothly. Just a little friction left to clear.'
+        : n >= 8 ? "You're near your capacity limit. A few bottlenecks are eating hours every week."
+        : n > 0 ? "You're stuck in the weeds. This is exactly what a 1:1 Bottleneck Audit fixes first."
+        : 'Start ticking to see your score.';
+    }
+    boxes.forEach(function (b) { b.addEventListener('change', update); });
+  })();
+</script>
+</body>
+</html>
