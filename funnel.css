@@ -1,6 +1,7 @@
 /* Shared styles for the funnel pages (services, workshop, replay).
    Palette and type match index.html: obsidian + champagne gold, Noto Serif / Manrope. */
 :root {
+  color-scheme: dark;
   --bg: #16171a;
   --bg-2: #1c1d21;
   --card: rgba(255,255,255,0.03);
